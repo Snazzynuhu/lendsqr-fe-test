@@ -4,7 +4,13 @@ import logoName from '../assets/lendsqr.svg'
 import { ReactComponent as LoginGraphic } from "../assets/pablo-sign-in 1.svg"
 import '../styles/Login.scss'
 
-const Login = () => {
+
+interface InputProps
+  extends React.InputHTMLAttributes<HTMLInputElement> {
+  error?: string;
+}
+
+const Login = ({ error, ...rest }: InputProps) => {
     const [passwordType, setPasswordType] = useState("password");
     const [passwordInput, setPasswordInput] = useState("");
 
@@ -32,7 +38,7 @@ const Login = () => {
             </div>
             <section className="login_left">
                 <div className="login_graphic">
-                    <LoginGraphic />
+                    <LoginGraphic className='loginGraphic' />
                 </div>
             </section>
             <section className="login-right">
@@ -44,10 +50,10 @@ const Login = () => {
                     <form className="form-container">
                         <div className="form-container_inputBox">
                             <div className="single_input">
-                                <input type="email" placeholder='Email' className="input_item" />
+                                <input {...rest} type="email" placeholder='Email' className="input_item" />
                             </div>
                             <div className="single_input password">
-                                <input type={passwordType} placeholder='Password' value={passwordInput} className="input_item" id='password_field' ref={emailRef} onChange={handlePasswordChange}/>
+                                <input {...rest} type={passwordType} placeholder='Password' value={passwordInput} className="input_item" id='password_field' ref={emailRef} onChange={handlePasswordChange}/>
                                 <button className="show" onClick={togglePassword}>show</button>
                             </div>
                         </div>
