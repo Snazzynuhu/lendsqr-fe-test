@@ -1,0 +1,15 @@
+$primaryColor: #39CDCC;
+$textColor: #000;
+$backgroundColor: #FFF;
+$white: #FFF;
+
+@mixin  flexContent($justifyContent, $flexDirection) {
+    display: flex;
+    justify-content: $justifyContent;
+    align-items: center; 
+    flex-direction: $flexDirection;
+}
+@mixin  gridCenter() {
+    display: grid;
+    place-content: center;
+}
