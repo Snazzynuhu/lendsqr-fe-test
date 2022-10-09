@@ -2,12 +2,15 @@
 
 .navbar{
     @include flexContent(space-between, row);
+    position: relative;
     left: 0%;
     right: 0%;
     top: 0%;
     bottom: 0%;
     padding: 1rem;
     box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+    z-index: 9999;
+    background-color: $white;
     &_logoContainer{
         @include flexContent(space-between, row);
         width: 9rem;

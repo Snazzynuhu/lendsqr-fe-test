@@ -4,6 +4,7 @@ $backgroundColor: #FFF;
 $white: #FFF;
 $navyBlue: #213F7D;
 $greyishBlue: #545F7D;
+$dashboardBackground: rgb(253, 253, 253);
 
 @mixin  flexContent($justifyContent, $flexDirection) {
     display: flex;
