@@ -1,0 +1,38 @@
+@import "./variables";
+
+.board-container{
+    position: absolute;
+    top: 23rem;
+    box-sizing: border-box;
+width: 1037px;
+height: 640px;
+left: 347px;
+background: #FFFFFF;
+border: 1px solid rgba(33, 63, 125, 0.06);
+box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+border-radius: 4px;
+&_headerList{
+    @include flexContent(space-between, row);
+    padding: 1.5rem;
+}
+}
+
+.singleItem{
+    @include flexContent(center, row);
+    width: max-content;
+    .title{
+        margin-right: 0.5rem;
+height: 15px;
+left: 373px;
+top: 458px;
+font-family: 'Work Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 14px;
+display: flex;
+align-items: flex-end;
+text-transform: uppercase;
+color: $greyishBlue;
+    }
+}
