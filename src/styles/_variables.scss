@@ -4,6 +4,9 @@ $backgroundColor: #FFF;
 $white: #FFF;
 $navyBlue: #213F7D;
 $greyishBlue: #545F7D;
+$pendingColor: #E9B200;
+$activeColor: #39CD62;
+$blacklistedColor: #E4033B;
 $dashboardBackground: rgb(253, 253, 253);
 
 @mixin  flexContent($justifyContent, $flexDirection) {

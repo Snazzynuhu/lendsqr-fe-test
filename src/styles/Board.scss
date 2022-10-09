@@ -5,7 +5,8 @@
     top: 23rem;
     box-sizing: border-box;
 width: 1037px;
-height: 640px;
+height: 440px;
+overflow-y: hidden;
 left: 347px;
 background: #FFFFFF;
 border: 1px solid rgba(33, 63, 125, 0.06);
@@ -14,6 +15,22 @@ border-radius: 4px;
 &_headerList{
     @include flexContent(space-between, row);
     padding: 1.5rem;
+}
+&_customersDetails{
+    @include flexContent(space-between, row);
+    padding: 0.5rem 1.5rem;
+    .text{
+// width: 154px;
+height: 17px;
+// left: 1006px;
+top: 510px;
+font-family: 'Work Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+color: #545F7D;
+    }
 }
 }
 
@@ -36,3 +53,46 @@ text-transform: uppercase;
 color: $greyishBlue;
     }
 }
+tbody{
+    padding: 10rem;
+    gap: 1rem;
+}
+th{
+    margin: 2rem 0;
+    padding:1rem;
+}
+td {
+    border-bottom: 1px solid rgba(33, 63, 125, 0.1);;
+    padding:1rem;
+    text-align: left;
+    height: 17px;
+font-family: 'Work Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+color: #545F7D;
+.statusBtn{
+    padding: 0.3rem;
+    border-radius: 100px;
+    border: none;
+    width: 100%;
+    text-transform: capitalize;
+    &.inactive{
+background: lighten($greyishBlue, 50%);
+color: $greyishBlue;
+    }
+    &.active{
+background: lighten($activeColor, 40%);
+color: $activeColor;
+    }
+    &.pending{
+background: lighten($pendingColor, 50%);
+color: $pendingColor;
+    }
+    &.blacklisted{
+background: lighten($blacklistedColor, 50%);
+color: $blacklistedColor;
+    }
+}
+  }

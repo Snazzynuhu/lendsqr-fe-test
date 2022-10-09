@@ -5,14 +5,14 @@ import { ReactComponent as State1 } from "../../assets/userStateIcons/stateicon1
 interface Istates {
   stateTitle: string;
   pop: number| string;
-
+  icon: JSX.Element | null ;
 }
 
-const SingleUser = ({stateTitle, pop}:Istates) => {
+const SingleUser = ({stateTitle, pop, icon}:Istates) => {
   return (
     <>
     <div className="singleState">
-                <State1/>
+                {icon}
                 <h5 className="text">
                     {stateTitle}
                 </h5>
