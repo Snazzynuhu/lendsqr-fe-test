@@ -2,6 +2,8 @@ $primaryColor: #39CDCC;
 $textColor: #000;
 $backgroundColor: #FFF;
 $white: #FFF;
+$navyBlue: #213F7D;
+$greyishBlue: #545F7D;
 
 @mixin  flexContent($justifyContent, $flexDirection) {
     display: flex;

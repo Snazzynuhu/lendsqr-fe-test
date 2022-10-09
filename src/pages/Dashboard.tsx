@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Navbar from '../components/Navbar';
 
 const Dashboard = () => {
   return (
-    <div>Dashboard content goes here: navbar and sidebar</div>
+    <>
+    <Navbar/>
+    </>
   )
 }
 
