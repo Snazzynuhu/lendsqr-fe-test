@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../styles/Users.scss';
-import { ReactComponent as State1 } from "../../assets/userStateIcons/stateicon1.svg";
+
 
 interface Istates {
   stateTitle: string;

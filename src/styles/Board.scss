@@ -32,6 +32,58 @@ line-height: 16px;
 color: #545F7D;
     }
 }
+&_pagination{
+    @include flexContent(space-between, row);
+    position: absolute;
+    bottom: -4rem;
+    left: 22rem;
+    width: 1037px;
+    z-index: 99999;
+    .left{
+        @include flexContent(space-between, row);
+        width: 12rem;
+.text{
+    font-family: 'Work Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+color: $greyishBlue;
+text-transform: capitalize;
+option{
+    color: #213F7D;
+}
+}
+.select{
+    background: rgba(33, 63, 125, 0.1);
+border-radius: 4px;
+border: none;
+padding: 0.2rem 0.5rem;
+}
+    }
+    .right{
+        @include flexContent(space-between, row);
+        width: 12rem;
+        &_pageBtn{
+            border: none;
+            font-family: 'Work Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: $greyishBlue;
+opacity: 0.6;
+&.icon{
+    @include flexContent(center, row);
+    color: $greyishBlue;
+    opacity: 1;
+    background: rgba(33, 63, 125, 0.1);
+border-radius: 4px;
+padding: 5px 7px;
+}
+        }
+    }
+}
 }
 
 .singleItem{

@@ -1,4 +1,6 @@
 @import "./variables";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500;700&family=Mulish:wght@600&family=Work+Sans:wght@300;400;500;700&display=swap');
+
 .sidebar{
 position: absolute;
 width: 283px;
@@ -8,4 +10,18 @@ bottom: -121px;
 background: #FFFFFF;
 z-index: -999;
 box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+padding: 1rem;
+}
+
+.sidebar_iconLabel{
+    @include flexContent(flex-start, row);
+    .text{
+       @include iconStyle; 
+       color:$iconColor ;
+       font-family: 'Work Sans', sans-serif;
+       font-style: normal;
+       font-weight: 400;
+       font-size: 16px;
+       line-height: 19px;
+    }
 }
