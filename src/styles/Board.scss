@@ -5,7 +5,7 @@
     top: 23rem;
     box-sizing: border-box;
 width: 1037px;
-height: 440px;
+height: 740px;
 overflow-y: hidden;
 left: 347px;
 background: #FFFFFF;
@@ -20,9 +20,7 @@ border-radius: 4px;
     @include flexContent(space-between, row);
     padding: 0.5rem 1.5rem;
     .text{
-// width: 154px;
 height: 17px;
-// left: 1006px;
 top: 510px;
 font-family: 'Work Sans';
 font-style: normal;
@@ -35,7 +33,7 @@ color: #545F7D;
 &_pagination{
     @include flexContent(space-between, row);
     position: absolute;
-    bottom: -4rem;
+    bottom: -23rem;
     left: 22rem;
     width: 1037px;
     z-index: 99999;
@@ -145,6 +143,82 @@ color: $pendingColor;
     &.blacklisted{
 background: lighten($blacklistedColor, 50%);
 color: $blacklistedColor;
+    }
+}
+  }
+
+  .dropdown-menu{
+position: absolute;
+width: 270px;
+height: 600px;
+left: 10px;
+top: 3rem;
+z-index: 10000;
+background: #FFFFFF;
+border: 1px solid rgba(84, 95, 125, 0.14);
+box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+border-radius: 4px;
+padding: 2rem 0rem;
+.form{
+    z-index: 9999;
+    &_group{
+        margin-bottom: 1rem;
+        .labelContainer{
+            @include flexContent(flex-start, row);
+            padding-left: 1.2rem;
+            margin-bottom: 0.5rem;
+            label{
+                width: 70px;
+height: 16px;
+left: 378px;
+top: 600px;
+font-family: 'Work Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+color: $greyishBlue;
+text-align: left;
+text-transform: capitalize;
+            }
+        }
+        & > input,  & > select{
+            box-sizing: border-box;
+            width: 230px;
+            height: 40px;
+            left: 378px;
+            top: 540px;
+            background: #FFFFFF;
+            opacity: 0.2;
+            border: 1px solid #213F7D;
+            border-radius: 8px;
+        }
+
+    }
+    .btnContainer{
+        @include flexContent(space-between, row);
+        width: 230px;
+        margin: 1rem 0rem 0rem 1.2rem;
+        & > button{
+            width: 98px;
+height: 40px;
+left: 378px;
+top: 1020px;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+text-transform: capitalize;
+&.resetBtn{
+    border: 1px solid $greyishBlue;
+    background: $white;
+}
+&.filterBtn{
+    border: 1px solid $primaryColor;
+    background: $primaryColor;
+border-radius: 8px;
+color: $white;
+}
+        }
     }
 }
   }

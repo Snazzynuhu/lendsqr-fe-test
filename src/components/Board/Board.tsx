@@ -6,6 +6,9 @@ import { ReactComponent as ArrowLeft } from "../../assets/arrowLeft.svg";
 import { ReactComponent as ArrowRight } from "../../assets/arrowRight.svg";
 
 const Board = () => {
+
+  const weekday = [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ];
+
   const [data, getData] = useState<any[]>([]);
 
   const status = ["inactive", "active", "pending", "blacklisted"];
@@ -28,6 +31,7 @@ const Board = () => {
 
   return (
     <>
+    
     <div className="board-container">
       <tbody>
         <tr>
@@ -57,7 +61,12 @@ const Board = () => {
             <td>{item.userName}</td>
             <td>{item.email}</td>
             <td>{item.phoneNumber}</td>
-            <td>{item.createdAt}</td>
+            <td>
+            {weekday[new Date(item.createdAt).getUTCDay()] +
+                  "," +
+                  " " +
+                  item.createdAt.slice(11, 19)}
+              </td>
             <td>
               <button className=  {item.accountBalance === Number("510.9")
                 ? "statusBtn inactive"
