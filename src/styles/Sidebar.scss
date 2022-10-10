@@ -15,6 +15,7 @@ padding: 1rem;
 
 .sidebar_iconLabel{
     @include flexContent(flex-start, row);
+    margin: 1rem 0rem;
     .text{
        @include iconStyle; 
        color:$iconColor ;
