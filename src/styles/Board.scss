@@ -189,9 +189,13 @@ text-transform: capitalize;
             left: 378px;
             top: 540px;
             background: #FFFFFF;
-            opacity: 0.2;
+            padding: 0rem 1rem;
             border: 1px solid #213F7D;
             border-radius: 8px;
+            &::placeholder{
+                text-transform: capitalize
+            }
+            
         }
 
     }
@@ -211,12 +215,19 @@ text-transform: capitalize;
 &.resetBtn{
     border: 1px solid $greyishBlue;
     background: $white;
+    &:hover{
+        background: $greyishBlue;
+        color: $white;
+    }
 }
 &.filterBtn{
     border: 1px solid $primaryColor;
     background: $primaryColor;
 border-radius: 8px;
 color: $white;
+&:hover{
+    background: darken($primaryColor, 7%);  
+}
 }
         }
     }

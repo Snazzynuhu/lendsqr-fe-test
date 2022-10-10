@@ -3,18 +3,17 @@ import { ReactComponent as FilterIcon } from "../../assets/filterIcon.svg";
 import "../../styles/Board.scss";
 
 const SingleListTitle: React.FC<{ title: string }> = ({ title }) => {
-  const [isModalOpen, setIsModalOpen] = useState(true);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleModal=()=>{
     setIsModalOpen(!isModalOpen);
-    console.log("working....", isModalOpen);
   }
 
   return (
     <>
       <div className="singleItem">
         <h4 className="title">{title}</h4>
-        <FilterIcon onClick={handleModal} />
+        <FilterIcon onClick={handleModal} style={{cursor: "pointer"}}/>
       </div>
       {isModalOpen && 
         <div className="dropdown-menu">
@@ -26,6 +25,7 @@ const SingleListTitle: React.FC<{ title: string }> = ({ title }) => {
                 </label>
               </div>
               <select name="organization" id="organization">
+                <option defaultValue="select">select</option>
                 <option defaultValue="kudi">kudi</option>
                 <option defaultValue="lendqsr">lendqsr</option>
                 <option defaultValue="chipper">chipper</option>

@@ -1,0 +1,7 @@
+@import "./variables";
+
+.backToUsers{
+    @include flexContent(space-between, row);
+    width: 10rem;
+    border: 1px solid red;
+}
