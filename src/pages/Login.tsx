@@ -3,6 +3,7 @@ import logo from "../assets/Union.svg";
 import logoName from "../assets/lendsqr.svg";
 import { ReactComponent as LoginGraphic } from "../assets/pablo-sign-in 1.svg";
 import "../styles/Login.scss";
+import { Link } from "react-router-dom";
 
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   error?: string;
@@ -73,7 +74,9 @@ const Login = ({ error, ...rest }: InputProps) => {
             <p className="form-container_forgotPasswordText">
               forgot password?
             </p>
+            <Link to="/dashboard">
             <button className="form-container_loginBtn">log in</button>
+            </Link>
           </form>
         </div>
       </section>
