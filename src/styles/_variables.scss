@@ -9,6 +9,7 @@ $activeColor: #39CD62;
 $blacklistedColor: #E4033B;
 $dashboardBackground: rgb(253, 253, 253);
 $iconColor: #213F7D;
+$borderLineColor: #E5E5E5;;
 
 @mixin  flexContent($justifyContent, $flexDirection) {
     display: flex;

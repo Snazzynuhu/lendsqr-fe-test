@@ -51,6 +51,7 @@ const Login = ({ error, ...rest }: InputProps) => {
                   type="email"
                   placeholder="Email"
                   className="input_item"
+                  required
                 />
                 {error && <div>{error}</div>}
               </div>

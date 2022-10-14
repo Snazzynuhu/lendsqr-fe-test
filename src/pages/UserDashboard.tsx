@@ -203,12 +203,13 @@ const UserDashboard = () => {
               <h5 className="title">duration of employment</h5>
               <h5 className="name"> 2 years</h5>
             </div>
-            <div className="contentA-item">
-              <h5 className="title">office email</h5>
-              <h5 className="name"> grace@lendsqr.com</h5>
-            </div>
           </article>
+
           <article className="contentB">
+          <div className="contentB-item">
+              <h5 className="title">office email</h5>
+              <h5 className="name email"> grace@lendsqr.com</h5>
+            </div>
             <div className="contentB-item">
               <h5 className="title">monthly income</h5>
               <h5 className="name"> #200,000.00 - #400,000.00</h5>
@@ -216,10 +217,6 @@ const UserDashboard = () => {
             <div className="contentB-item">
               <h5 className="title">loan repayment</h5>
               <h5 className="name"> #40,000</h5>
-            </div>
-            <div className="contentB-item">
-              <h5 className="title">type of residence</h5>
-              <h5 className="name">parent's apartment</h5>
             </div>
           </article>
         </div>
