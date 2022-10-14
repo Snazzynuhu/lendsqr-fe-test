@@ -167,8 +167,8 @@ const UserDashboard = () => {
               <h5 className="name"> female</h5>
             </div>
           </article>
-          <article className="contentB">
-            <div className="contentB-item">
+          <article className="contentB fix">
+            <div className="contentB-item ">
               <h5 className="title">marital status</h5>
               <h5 className="name"> single</h5>
             </div>
@@ -222,19 +222,19 @@ const UserDashboard = () => {
         </div>
 
          {/* SOCIALS */}
-         <div className="details-container_personalInfo">
+         <div className="details-container_personalInfo social">
           <h3 className="heading">socials</h3>
           <article className="contentA">
             <div className="contentA-item">
               <h5 className="title">twitter</h5>
-              <h5 className="name"> @grace_</h5>
+              <h5 className="name email" > @grace_effrom</h5>
             </div>
             <div className="contentA-item">
               <h5 className="title">facebook</h5>
               <h5 className="name"> grace effiom</h5>
             </div>
             <div className="contentA-item">
-              <h5 className="title">innstagram</h5>
+              <h5 className="title">instagram</h5>
               <h5 className="name email">@grace_effrom</h5>
             </div>
            </article>

@@ -242,6 +242,9 @@ padding: 1rem;
   padding: 2rem 0rem;
   width: 100%;
   border-bottom: 1px solid $borderLineColor;
+  &.social{
+    width: 70%;
+  }
   &:last-child{
     border-bottom: 1px solid transparent;
   }
@@ -264,7 +267,8 @@ color: $navyBlue;
     flex-wrap: wrap;
     margin-top: 1rem;
     &-item{
-      @include flexContent(flex-start, column);
+      @include flexContent(space-between, column);
+      height: 2.5rem;
       text-align: left;
       margin-right: auto;
 .title{
@@ -301,9 +305,13 @@ margin-right: auto;
     width: 60%;
     flex-wrap: wrap;
     margin-top: 1rem;
+    &.fix{
+      width: 53%;
+    }
     &-item{
-      @include flexContent(flex-start, column);
+      @include flexContent(space-between, column);
       text-align: left;
+      height: 2.5rem;
   
 .title{
   width: 100%;
